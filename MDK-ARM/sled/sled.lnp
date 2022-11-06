@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"sled\startup_stm32f103xb.o"
+"sled\main.o"
+"sled\gpio.o"
+"sled\tim.o"
+"sled\usart.o"
+"sled\stm32f1xx_it.o"
+"sled\stm32f1xx_hal_msp.o"
+"sled\stm32f1xx_hal_gpio_ex.o"
+"sled\stm32f1xx_hal_tim.o"
+"sled\stm32f1xx_hal_tim_ex.o"
+"sled\stm32f1xx_hal.o"
+"sled\stm32f1xx_hal_rcc.o"
+"sled\stm32f1xx_hal_rcc_ex.o"
+"sled\stm32f1xx_hal_gpio.o"
+"sled\stm32f1xx_hal_dma.o"
+"sled\stm32f1xx_hal_cortex.o"
+"sled\stm32f1xx_hal_pwr.o"
+"sled\stm32f1xx_hal_flash.o"
+"sled\stm32f1xx_hal_flash_ex.o"
+"sled\stm32f1xx_hal_exti.o"
+"sled\stm32f1xx_hal_uart.o"
+"sled\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "sled\sled.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "sled.map" -o sled\sled.axf
